@@ -1,0 +1,16 @@
+/*Este es un selector de etiqueta */
+body {
+    background-image:url("../img/unnamed.jpg");
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+color:rgb(76, 204, 161);
+text-align: center;
+}
+
+h2 {
+    color: antiquewhite;
+    text-align: center;
+}
+
