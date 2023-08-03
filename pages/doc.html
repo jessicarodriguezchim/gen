@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/microphone.png">
+    <link rel="stylesheet" href="../styles/contacto.css">
+    <title>¡Contáctanos!</title>
+
+</head>
+<body>
+    <header>
+        <h1> ¡Hola, contáctanos! </h1>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="/index.html"> Inicio </a>
+            </li>
+            <li>
+                <a href="../pages/selectores.html"> Selectores </a>
+            </li>
+            <li>
+                <a href="../pages/nosotros.html"> Nosotros </a>
+            </li>
+            <li>
+                <a href="#"> Contáctanos </a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <form action="https://formsubmit.co/jessica.g.rodriguez.chim@gmail.com" method="post"> <!-- Action y method son atributos principales para los formularios-->
+            <fieldset class="basicos" id="datos-basicos"><!-- Agrupar por campos -->
+                <legend> Datos básicos de contacto </legend>
+
+                <label for="nombre"> Nombre:</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Jessica" required> <br>
+                <!-- Agregamos el atributo name en input. Ligamos el label con el input a través del id y for -->
+
+                <label for="apellido"> Apellidos: </label>
+                <input id="apellido" name="apellido" type="text" placeholder="Rodríguez"><br>
+
+                <label for="correo"> Correo electrónico: </label>
+                <input id="correo" name="correo" type="email" placeholder="tucorreo@correo.com" required autocomplete=""><br>
+
+                <label for="numero-telefono"> Número de télefono:</label>
+                <input id="numero-telefono" name="numero-telefono" type="tel" placeholder="5252525252">
+
+            </fieldset>
+
+            <fieldset>
+                <legend> Datos del pedido </legend>
+                ¿Cuántos tamales necesita? <input id="numero-tamales" type="number" min="20" max="500" required placeholder="20"><br>
+                ¿Cuántos litros de atoles necesita? <input id="litros-atole"  type="number" min="4" max="40"><br>
+                Fecha del evento <input type="date"><br>
+            </fieldset>
+            <fieldset class="basicos">
+                <legend> Datos del envío </legend>
+
+                <label for="sucursal">Recoger en sucursal<input type="radio" id="sucursal" name="tipo-de-envio"></label> <br>
+                <label for="envio">Envío a domicilio <input type="radio" id="envio" name="tipo-de-envio"></label> <br>
+
+
+                <!-- Nuestro usuario hace scroll infinito hasta encontrar la opción deseada -->
+	               <h1> ¡Hola, contáctanos! </h1>
+                    <option value=""> Sucursal Ecatepec </option>
+                    <option value=""> Sucursal casa de Mau </option>
+                    <option value=""> Sucursal Guadalajara </option>
+                </select><br>
+
+
+                <input list="sucursales">
+                <datalist id="sucursales">
+	            <h1> ¡Hola, contáctanos! </h1>
+                    <option value="Sucursal casa de Mau"> Sucursal casa de Mau </option>
+                    <option value="Sucursal Guadalajara"> Sucursal Guadalajara </option>
+                </datalist><br>
+
+                <label for="terminos-condiciones"> <input id="terminos-condiciones" name="terminos" type="checkbox"> Acepto términos y condiciones </label><br>
+
+                <!-- <input type="submit"><br>  -->
+                <button type="submit"> Enviar </button>
+                </fieldset>
+            </form>
+        </section> 
+    </main>
+
+</body>
+</html>

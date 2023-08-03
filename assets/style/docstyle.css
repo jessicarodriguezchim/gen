@@ -1,0 +1,75 @@
+/* Estilos generales */
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(127,180,228,1) 100%);
+}
+
+h1{
+    text-align: center;
+    color: purple;
+    font-style: italic;
+}
+
+h1:hover{ /* Pseudoclase */
+    font-size: 50px;
+    color: cornflowerblue;
+}
+
+/* Estilos de barra de navegación */
+nav{
+    height: 50px; /* Altura de barra de navegación*/
+    width: auto; /* El ancho de la barra de navegación se ajusta en automático al contenido dentro de ella */
+	@@ -30,4 +48,53 @@ nav a{
+
+a[href="./assets/pages/contacto.html"]{ /* Selector de atributo */
+    color: brown;
+}
+
+/* Estilos de formulario */
+
+form {
+    margin: 0 auto; 
+    width: 700px;
+    border: 4px ridge black;
+    padding: 15px;
+    border-radius: 1em;
+    text-align: center;
+}
+
+fieldset{
+    border-color: blueviolet;
+}
+
+.basicos{
+    border-color: aquamarine;
+}
+
+#datos-basicos{
+    border-color: red;
+}
+
+legend{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+input{
+    border-radius: 0.5em;
+    margin: 0.3em;
+}
+
+#numero-tamales:in-range{
+    background-color: green;
+}
+
+#numero-tamales:out-of-range{
+    background-color: red;
+}
+
+#litros-atole:in-range{
+    background-color: pink;
+}
+
+#litros-atole:out-of-range{
+    background-color: black;
+}
